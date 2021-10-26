@@ -1,0 +1,333 @@
+* {
+    /* margem */
+    margin: 0;
+    /* preenchimento */
+    padding: 0;
+    /* tamanho da caixa */
+    box-sizing: border-box;
+    /* fonte */
+    font-family: 'Poppins', sans-serif;
+    /* decoracao de texto */
+    text-decoration:none;
+    /* cor da fonte */
+    color: #fff;
+}
+
+header {
+    /* altura minima */
+    min-height: 9vh;
+    /*  */
+    display: flex;
+    /* alinhar itens no centro */
+    align-items: center; 
+    /* justificar o conteudo */
+    justify-content: center;
+    /* cor de fundo */
+    background-color: #383c42; 
+}
+
+header h1 {
+    /* tamanho da fonte */
+    font-size: 2.5em;
+    color: azure;
+}
+
+main {
+    /* 100 % de largura*/
+    width: 100%;
+    /* altura minima ocupar toda a tela */
+    min-height: 91vh;
+    /* cor de fundo degrade */
+    background: linear-gradient( #18acfe, #0166e1);
+    /*  */
+    display: flex;
+    /* alinhar o conteudo no centro */
+    justify-content: center;
+    /* sombra da caixa */
+    box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.25); 
+}
+
+main form {
+    /* margem superior */
+    margin-top: 5%;
+    /* largura */
+    width: 35%;
+    /* altura */
+    height: 70vh;
+    /* cor de fundo */
+    background-color: #383c42;
+    /* sombra da caixa */
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4) inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    /* arredondamento das bordas */
+    border-radius: 30px;
+    /* preenchimento */
+    padding: 2%;
+
+    /*  */
+    display: flex;
+    /* direcao display em coluna */
+    flex-direction: column;
+    /* alinhar itens ao centro*/
+    align-items: center;
+}
+
+main form .inputs-container {
+    /* margem superior */
+    margin-top: 10%;
+    /* largura */
+    width: 100%;
+
+    /*  */
+    display: flex;
+    /* direcao do display coluna */
+    flex-direction: column;
+    /* alinhar itens ao centro */
+    align-items: center;
+}
+
+main form .inputs-container input {
+    /* largura sobre o espaço disponivel*/
+    width: 90%;
+    /* altura */
+    height: 90%;
+    /* preenchimento */
+    padding: 8px 15px;
+    /* fronteira */
+    border: 0;
+    /* contorno */
+    outline: 0;
+    /* arredondamento das bordas */
+    border-radius: 10px;
+    /* tamanho da fonte */
+    font-size: 16px;
+    /* cor da fonte*/
+    color: #312e42; 
+
+    /* sombra da caixa */
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+}
+
+/* efeito no elemento quando clicado */
+main form .inputs-container input:focus {
+    box-shadow: inset 1px 4px 7px rgba(0, 0, 0, 0.5);
+}
+
+main form .password-container {
+    /* margem superior */
+    margin-top: 5%;
+    /* largura */
+    width: 100%;
+    /* posição */
+    position: relative;
+
+    /*  */
+    display: flex;
+    /* direção do display coluna */
+    flex-direction: column;
+    /* alinhar itens ao centro */
+    align-items: center;
+}
+
+main form .password-container i {
+    /* posição */
+    position: absolute;
+    /* direita */
+    right: 8%;
+    /* topo */
+    top: 30%;
+    /* cor */
+    color: #777;
+    /* tipo de cursor */
+    cursor: pointer;
+}
+
+main form .password-container #eye {
+    display: none;
+}
+
+main form .password-infos {
+    /* largura */
+    width: 90%;
+    /* margem superior */
+    margin-top: 3%;
+
+    /*  */
+    display: flex;
+    /* alinhar itens ao centro */
+    align-items: center;
+    /* espaçamento dos elementos */
+    justify-content: space-between;
+}
+
+main form .password-infos a {
+    transition: 0.2s ease-in-out;
+}
+
+/* quando passar o mouse em em cima do elemento A ira mudar de cor */
+main form .password-infos a:hover {
+    color: #18acfe;
+}
+
+main form button {
+    /* cor de fundo */
+    background-color: #18acfe;
+    /* largura */
+    width: 90%;
+    /* altura */
+    height: 50px;
+    /* tirar a borda */
+    border: 0;
+    /* tirar o contorno */
+    outline: 0;
+    /* arredondamento de borda */
+    border-radius: 12px;
+    /* margem do topo */
+    margin-top: 10%;
+    /* tamanho da fonte */
+    font-size: 1.6em;
+    /* peso da fonte */
+    font-weight: 600;
+    /* cursor do mouse */
+    cursor: pointer;
+    /* transição */
+    transition: 0.3s ease-in-out;
+}
+
+main form button:hover {
+    background: #fff;
+    color: #18acfe;
+}
+
+main form .links-container {
+    /* largura */
+    width: 100%;
+    /*  */
+    display: flex;
+    /* colunas */
+    flex-direction: column;
+    /* alinhamento de itens ao centro */
+    align-items: center;
+    /* margem de topo de 10% */
+    margin-top: 10%;
+}
+
+main form .links-container span {
+    /* tamanho da fonte */
+    font-size: 0.8em;
+    /* peso da fonte */
+    font-weight: 600;
+    
+}
+
+main form .links-container aside {
+    /* margem do topo */
+    margin-top: 5%;
+    /* largura */
+    width: 50%;
+    
+    /*  */
+    display: flex;
+    /* alinhamento de itens */
+    align-items: center;
+    /* espaçamento dos itens dividindo espaço igual para todos */
+    justify-content: space-around;
+
+}
+
+main form .links-container aside i {
+    /* tamanho da fonte */
+    font-size: 1.6em;
+    /* cor de fundo */
+    background-color: #fff;
+    /* preenchimento */
+    padding: 8px;
+    /* altura */
+    height: 40px;
+    /* largura */
+    width: 40px;
+    /* arredondamento das bordas */
+    border-radius: 20px;
+    /* transição */
+    transition: 0.3s ease-in-out;
+    /* cor */
+    color: #fff;
+
+    /*  */
+    display: flex;
+    /* alinhar itens ao centro */
+    align-items: center;
+    /* posicao do conteudo no centro */
+    justify-content: center;
+}
+
+main form .links-container aside .google {
+    color: #e34133; 
+}
+
+main form .links-container aside .google:hover {
+    background-color: #e34133;
+    color: #fff;
+}
+
+main form .links-container aside .linkedin {
+    color: #0a66c2; 
+}
+
+main form .links-container aside .linkedin:hover {
+    background-color: #0a66c2;
+    color: #fff;
+}
+
+main form .links-container aside .facebook {
+    color: #14a0f9; 
+}
+
+main form .links-container aside .facebook:hover {
+    background-color: #14a0f9;
+    color: #fff;
+}
+
+main form footer {
+    /* largura */
+    width: 100%;
+    /* topo da margem */
+    margin-top: 10%;
+
+    /*  */
+    display: flex;
+    /* formato de colunas */
+    flex-direction: column;
+    /* alinhamento de itens */
+    align-items: center;
+}
+
+main form footer hr {
+    /* largura */
+    width: 100%;
+    /* altura */
+    height: 3px;
+    /* cor de fundo */
+    background-color: #fff;
+}
+
+main form footer span {
+    /* peso da fonte */
+    font-weight: 400;
+    /* tamanho da fonte */
+    font-size: 0.9em;
+    /* margem de topo */
+    margin-top: 5%;
+}
+
+main form footer a {
+    /* peso da fonte */
+    font-weight: 600;
+    /* transição */
+    transition: 0.2s ease-in-out;
+}
+
+main form footer a:hover {
+    /* cor */
+    color: #18acfe;
+}
